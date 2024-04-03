@@ -1,0 +1,57 @@
+body {
+  background-color: #e0ffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.gallery-title {
+  display: inline-block;
+  padding-left: 50px;
+  font-size: 52px;
+  text-shadow: 6px 6px 8px #e0ffff;
+  background-image: linear-gradient(120deg, #6495ed 30%, #ff69b4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.link-1 {
+  color: #8b008b;
+  padding-left: 50px;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.link-1:hover,
+.link-1:focus {
+  background: linear-gradient(120deg, #6a5acd 30%, #87ceeb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 6px 6px 8px #e0ffff;
+}
+
+.gallery {
+  display: flex;
+  max-width: 1440px;
+  padding: 24px 156px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-link:hover .gallery-image {
+  transform: scale(1.05);
+  cursor: pointer;
+}
